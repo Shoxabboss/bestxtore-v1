@@ -1,0 +1,64 @@
+.xizmat{ margin-top: 14px; }
+
+.xizmatQator{
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.xizmatKart{
+  border-radius: 12px;
+  background:#111;
+  color:#fff;
+  min-height: 74px;
+  display:flex;
+  align-items:center;
+  gap: 12px;
+  padding: 14px 14px;
+  box-shadow: 0 8px 18px rgba(0,0,0,.06);
+}
+
+.xizmatKartYashil{
+  background:#18c7b0;
+  color:#051f1c;
+}
+
+.xizmatIkonBox{
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: rgba(255,255,255,.12);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.xizmatKartYashil .xizmatIkonBox{
+  background: rgba(0,0,0,.08);
+}
+
+.xizmatBelgi{
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.xizmatNom{
+  font-size: 12px;
+  font-weight: 1000;
+  letter-spacing: .3px;
+}
+
+.xizmatSub{
+  font-size: 12px;
+  margin-top: 3px;
+  opacity: .85;
+}
+
+@media (max-width: 1000px){
+  .xizmatQator{ grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 560px){
+  .xizmatQator{ grid-template-columns: 1fr; }
+}

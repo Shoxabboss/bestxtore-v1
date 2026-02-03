@@ -1,0 +1,801 @@
+.sahifa{ width:100%; }
+
+.katak2{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:18px;
+  margin-bottom: 10px;
+}
+
+.katak3{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap:16px;
+}
+
+.katak4{
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap:16px;
+}
+
+.kart{
+  border:1px solid #eee;
+  border-radius:14px;
+  overflow:hidden;
+  background:#fff;
+  box-shadow: 0 12px 24px rgba(0,0,0,.06);
+  display:flex;
+  gap:0;
+}
+
+.kart__rasmQism{
+  width: 46%;
+  background:#f5f5f5;
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:16px;
+}
+
+.kart__rasm{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  border-radius:12px;
+}
+
+.kart__yorliq{
+  position:absolute;
+  top:12px;
+  left:12px;
+  background:#111;
+  color:#fff;
+  font-size:11px;
+  font-weight:800;
+  padding:6px 8px;
+  border-radius:8px;
+}
+
+.kart__chegirma{
+  position:absolute;
+  top:12px;
+  right:12px;
+  background:#18c7b0;
+  color:#05211d;
+  font-size:11px;
+  font-weight:900;
+  padding:6px 8px;
+  border-radius:8px;
+}
+
+.kart__ich{
+  width:54%;
+  padding:16px 16px 14px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.kart__nom{
+  font-weight:900;
+  font-size:13px;
+  color:#1a1a1a;
+  line-height:1.2;
+}
+
+.kart__narxQator{
+  display:flex;
+  gap:10px;
+  align-items:baseline;
+}
+
+.kart__narx{
+  font-weight:900;
+  color:#111;
+}
+
+.kart__eski{
+  font-size:12px;
+  color:#9a9a9a;
+  text-decoration: line-through;
+}
+
+.kart__reyting{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-size:12px;
+  color:#555;
+  font-weight:800;
+}
+
+.kart__yulduz{
+  width:14px;
+  height:14px;
+}
+
+.kart__savat{
+  margin-top:auto;
+  border:1px solid #eee;
+  background:#fff;
+  border-radius:12px;
+  height:40px;
+  font-weight:900;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+}
+
+.kart__savat:hover{ border-color:#dcdcdc; }
+
+.kart__savatIkon{
+  width:16px;
+  height:16px;
+}
+
+.katKart{
+  border:1px solid #eee;
+  background:#fff;
+  border-radius:14px;
+  padding:18px;
+  min-height:130px;
+  box-shadow: 0 10px 20px rgba(0,0,0,.05);
+}
+
+.katKart__nom{
+  font-weight:900;
+  color:#1a1a1a;
+  margin-bottom:10px;
+  font-size:14px;
+}
+
+.katKart__roYxat{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+  font-size:12px;
+  color:#666;
+}
+
+.katKart__link{
+  margin-top:12px;
+  display:inline-block;
+  font-weight:900;
+  font-size:12px;
+  color:#18c7b0;
+}
+
+.newBanner{
+  margin-top: 26px;
+  height: 420px;
+  position:relative;
+  overflow:hidden;
+}
+
+.newBanner__fon{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  filter: saturate(1.05);
+}
+
+.newBanner__ich{
+  position:relative;
+  height:420px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap: 24px;
+}
+
+.newBanner__chap{
+  width: 520px;
+}
+
+.newBanner__katta{
+  font-size: 82px;
+  font-weight: 900;
+  color: rgba(255,255,255,.9);
+  line-height: .95;
+  letter-spacing: 1px;
+}
+
+.newBanner__katta2{
+  font-size: 82px;
+  font-weight: 900;
+  color: rgba(17,17,17,.85);
+  line-height: .95;
+  margin-top: 2px;
+}
+
+.newBanner__oNg{
+  width: 360px;
+  background: rgba(255,255,255,.65);
+  border: 1px solid rgba(255,255,255,.55);
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 20px 50px rgba(0,0,0,.10);
+  backdrop-filter: blur(8px);
+}
+
+.newBanner__mayda{
+  font-size: 12px;
+  color:#444;
+  font-weight:800;
+}
+
+.newBanner__sarl{
+  margin-top: 8px;
+  font-size: 20px;
+  font-weight: 900;
+  color:#111;
+}
+
+.newBanner__matn{
+  margin-top: 10px;
+  font-size: 12px;
+  color:#4f4f4f;
+  line-height: 1.6;
+}
+
+.newBanner__narxlar{
+  margin: 14px 0 14px;
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+.newBanner__chip{
+  background:#111;
+  color:#fff;
+  font-weight:900;
+  font-size:12px;
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+
+.newBanner__chip--oq{
+  background:#fff;
+  color:#111;
+  border:1px solid #e7e7e7;
+}
+
+.mahsulotKatak{
+  margin-bottom: 22px;
+}
+
+.mKart{
+  border:1px solid #eee;
+  border-radius:14px;
+  overflow:hidden;
+  background:#fff;
+  box-shadow: 0 12px 24px rgba(0,0,0,.06);
+}
+
+.mKart__rasmQism{
+  background:#f4f4f4;
+  height: 210px;
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:14px;
+}
+
+.mKart__rasm{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius:12px;
+}
+
+.mKart__belgi{
+  position:absolute;
+  top:12px;
+  right:12px;
+  background:#111;
+  color:#fff;
+  font-weight:900;
+  font-size:11px;
+  padding:6px 8px;
+  border-radius:8px;
+}
+
+.mKart__ich{
+  padding: 14px 14px 14px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.mKart__nom{
+  font-weight:900;
+  font-size:13px;
+  color:#1a1a1a;
+}
+
+.mKart__narxQator{
+  display:flex;
+  align-items:baseline;
+  gap:10px;
+}
+
+.mKart__narx{
+  font-weight:900;
+  color:#111;
+}
+
+.mKart__eski{
+  font-size:12px;
+  color:#9a9a9a;
+  text-decoration: line-through;
+}
+
+.mKart__reyting{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-size:12px;
+  color:#555;
+  font-weight:800;
+}
+
+.mKart__yulduz{
+  width:14px;
+  height:14px;
+}
+
+.mKart__tugma{
+  margin-top: 2px;
+  height: 40px;
+  border-radius: 12px;
+  border:1px solid #eee;
+  background:#fff;
+  font-weight:900;
+  cursor:pointer;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+}
+
+.mKart__tugma:hover{ border-color:#dcdcdc; }
+
+.mKart__savatIkon{
+  width:16px;
+  height:16px;
+}
+
+.ikkiBanner{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin: 22px 0 34px;
+}
+
+.bannerKichik{
+  border-radius: 14px;
+  background: #f3f3f3;
+  padding: 22px;
+  min-height: 120px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  gap: 10px;
+  border:1px solid #efefef;
+}
+
+.bannerKichik--oq{
+  background:#fff;
+}
+
+.bannerKichik__ust{
+  font-size: 13px;
+  color:#666;
+  font-weight:800;
+}
+
+.bannerKichik__nom{
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.macBanner{
+  margin-top: 18px;
+  height: 260px;
+  position:relative;
+  overflow:hidden;
+}
+
+.macBanner__fon{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.macBanner__ich{
+  position:relative;
+  height:260px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap: 18px;
+}
+
+.macBanner__chap{
+  width: 520px;
+}
+
+.macBanner__sarl{
+  font-weight:900;
+  font-size: 16px;
+  color:#111;
+}
+
+.macBanner__katta{
+  margin-top: 8px;
+  font-weight:900;
+  font-size: 28px;
+  color:#111;
+}
+
+.macBanner__roYxat{
+  margin-top: 10px;
+  font-size: 12px;
+  color:#555;
+  display:flex;
+  flex-direction:column;
+  gap: 6px;
+}
+
+.macBanner__oNg{
+  width: 280px;
+  background: rgba(255,255,255,.75);
+  border: 1px solid rgba(255,255,255,.65);
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 20px 50px rgba(0,0,0,.10);
+  display:flex;
+  flex-direction:column;
+  gap: 10px;
+  align-items:flex-start;
+}
+
+.macBanner__narx{
+  font-weight: 900;
+  font-size: 28px;
+  color:#111;
+}
+
+.macBanner__mayda{
+  font-size: 12px;
+  color:#555;
+}
+
+.topRated{
+  display:grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap: 16px;
+}
+
+.topRated__katta{
+  border-radius: 16px;
+  background:#111;
+  color:#fff;
+  min-height: 240px;
+  position:relative;
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  padding: 22px;
+}
+
+.topRated__ich{
+  z-index:2;
+}
+
+.topRated__nom{
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.topRated__sub{
+  margin-top: 6px;
+  font-size: 12px;
+  color: rgba(255,255,255,.75);
+}
+
+.topRated__rasm{
+  position:absolute;
+  right: 12px;
+  bottom: -10px;
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 18px;
+  opacity:.95;
+}
+
+.topRated__yon{
+  display:flex;
+  flex-direction:column;
+  gap: 12px;
+}
+
+.topRated__qator{
+  border:1px solid #eee;
+  border-radius: 16px;
+  background:#fff;
+  box-shadow: 0 12px 24px rgba(0,0,0,.06);
+  padding: 12px;
+  display:flex;
+  gap: 12px;
+  align-items:center;
+}
+
+.topRated__mini{
+  width: 70px;
+  height: 70px;
+  border-radius: 14px;
+  object-fit: cover;
+  background:#f3f3f3;
+}
+
+.topRated__qnom{
+  font-weight: 900;
+  font-size: 13px;
+  color:#111;
+}
+
+.topRated__qnarx{
+  margin-top: 6px;
+  display:flex;
+  gap: 10px;
+  align-items:baseline;
+}
+
+.topRated__qnarxAsos{
+  font-weight: 900;
+  color:#111;
+  font-size: 13px;
+}
+
+.topRated__qnarxEski{
+  font-size: 12px;
+  color:#9a9a9a;
+  text-decoration: line-through;
+}
+
+.topRated__qreyting{
+  margin-top: 6px;
+  display:flex;
+  align-items:center;
+  gap: 8px;
+  font-size: 12px;
+  color:#555;
+  font-weight:800;
+}
+
+.topRated__yulduz{
+  width: 14px;
+  height: 14px;
+}
+
+.feedback{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.feedback__kart{
+  border:1px solid #eee;
+  border-radius: 16px;
+  background:#fff;
+  box-shadow: 0 12px 24px rgba(0,0,0,.06);
+  padding: 18px;
+  min-height: 140px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+
+.feedback__matn{
+  font-size: 13px;
+  color:#444;
+  line-height: 1.65;
+}
+
+.feedback__past{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-top: 14px;
+}
+
+.feedback__ism{
+  font-weight: 900;
+  color:#111;
+}
+
+.feedback__yulduzlar{
+  display:flex;
+  gap: 6px;
+}
+
+.feedback__yulduzlar img{
+  width: 14px;
+  height: 14px;
+}
+
+.insta{
+  margin: 18px 0 34px;
+  display:grid;
+  grid-template-columns: 240px 1fr;
+  gap: 16px;
+  align-items:stretch;
+}
+
+.insta__katta{
+  background:#111;
+  border-radius: 16px;
+  color:#fff;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap: 10px;
+  min-height: 170px;
+}
+
+.insta__ikon{
+  width: 34px;
+  height: 34px;
+  filter: invert(1);
+}
+
+.insta__tag{
+  font-weight: 900;
+  letter-spacing: .5px;
+}
+
+.insta__katak{
+  display:grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+}
+
+.insta__blok{
+  border-radius: 16px;
+  background:#f1f1f1;
+  height: 170px;
+}
+
+.footer{
+  background:#101010;
+  color:#fff;
+}
+
+.footer__ich{
+  padding: 46px 0 28px;
+  display:grid;
+  grid-template-columns: 1.2fr 1fr 1fr 1fr;
+  gap: 18px;
+  align-items:start;
+}
+
+.footer__logo{
+  font-weight: 1000;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+
+.footer__matn{
+  margin-top: 12px;
+  font-size: 12px;
+  color: rgba(255,255,255,.65);
+  line-height: 1.7;
+  width: 260px;
+}
+
+.footer__inputQator{
+  margin-top: 14px;
+  display:flex;
+  gap: 10px;
+}
+
+.footer__input{
+  flex:1;
+  height: 40px;
+  border-radius: 12px;
+  border:1px solid rgba(255,255,255,.18);
+  background: rgba(255,255,255,.06);
+  color:#fff;
+  padding: 0 12px;
+  outline:0;
+  font-size: 13px;
+}
+
+.footer__btn{
+  height: 40px;
+  padding: 0 14px;
+  border-radius: 12px;
+  border:0;
+  background:#18c7b0;
+  color:#05211d;
+  font-weight: 900;
+  cursor:pointer;
+}
+
+.footer__ustun{
+  display:flex;
+  flex-direction:column;
+  gap: 8px;
+}
+
+.footer__sarl{
+  font-weight: 900;
+  margin-bottom: 6px;
+}
+
+.footer__link{
+  font-size: 12px;
+  color: rgba(255,255,255,.72);
+}
+
+.footer__link:hover{
+  color:#fff;
+}
+
+.footer__mayda{
+  font-size: 12px;
+  color: rgba(255,255,255,.72);
+  line-height: 1.7;
+}
+
+.footer__past{
+  border-top:1px solid rgba(255,255,255,.10);
+}
+
+.footer__pastIch{
+  padding: 14px 0;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  color: rgba(255,255,255,.65);
+  font-size: 12px;
+}
+
+.footer__kartalar{
+  color: rgba(255,255,255,.8);
+}
+
+@media (max-width: 1050px){
+  .katak4{ grid-template-columns: repeat(2, 1fr); }
+  .topRated{ grid-template-columns: 1fr; }
+  .footer__ich{ grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 860px){
+  .katak2{ grid-template-columns: 1fr; }
+  .katak3{ grid-template-columns: repeat(2, 1fr); }
+  .insta{ grid-template-columns: 1fr; }
+  .insta__katak{ grid-template-columns: repeat(3, 1fr); }
+  .feedback{ grid-template-columns: 1fr; }
+  .newBanner__katta, .newBanner__katta2{ font-size: 58px; }
+}
+
+@media (max-width: 560px){
+  .katak3{ grid-template-columns: 1fr; }
+  .katak4{ grid-template-columns: 1fr; }
+  .insta__katak{ grid-template-columns: repeat(2, 1fr); }
+  .newBanner__oNg{ width: 100%; }
+}

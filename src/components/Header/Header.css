@@ -1,0 +1,260 @@
+.header{ width:100%; }
+
+.headerYuqori{
+  height:36px;
+  background:#f6f6f6;
+  border-bottom:1px solid #eee;
+}
+
+.headerYuqoriIch{
+  height:36px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+  font-size:13px;
+  color:#666;
+}
+
+.headerAloqa, .headerSozlama{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  white-space:nowrap;
+}
+
+.headerNuqta{
+  width:4px;
+  height:4px;
+  background:#cfcfcf;
+  border-radius:999px;
+  display:inline-block;
+}
+
+.headerAksiya{
+  color:#333;
+  font-weight:500;
+  white-space:nowrap;
+}
+
+.headerStrelka{ font-weight:900; }
+
+.headerOrta{
+  height:86px;
+  background:#fff;
+}
+
+.headerOrtaIch{
+  height:86px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:18px;
+}
+
+.headerBrend{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.headerLogo{
+  width:32px;
+  height:32px;
+  border-radius:10px;
+  object-fit:cover;
+}
+
+.headerNomi{
+  font-weight:1000;
+  letter-spacing:1px;
+  font-size:18px;
+}
+
+.headerQidiruv{
+  width:620px;
+  height:44px;
+  border:1px solid #dedede;
+  border-radius:10px;
+  overflow:hidden;
+  display:flex;
+  align-items:center;
+  background:#fff;
+}
+
+.headerInput{
+  flex:1;
+  height:100%;
+  border:0;
+  outline:0;
+  padding:0 14px;
+  font-size:14px;
+}
+
+.headerInput::placeholder{ color:#b6b6b6; }
+
+.headerChiziq{
+  width:1px;
+  height:60%;
+  background:#e8e8e8;
+}
+
+.headerKategoriya{
+  border:0;
+  background:#fff;
+  height:100%;
+  padding:0 14px;
+  color:#666;
+  cursor:pointer;
+  font-size:14px;
+  white-space:nowrap;
+}
+
+.headerCaret{ font-size:12px; opacity:.8; }
+
+.headerQidirBtn{
+  width:50px;
+  height:100%;
+  border:0;
+  background:#111;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+}
+
+.headerAmal{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.headerIkonBtn{
+  position:relative;
+  width:36px;
+  height:36px;
+  border:0;
+  background:transparent;
+  border-radius:10px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+}
+
+.headerIkonBtn:hover{ background:#f6f6f6; }
+
+.headerIkon{
+  width:22px;
+  height:22px;
+  display:block;
+}
+
+.headerIkonOq{ filter: invert(1); }
+.headerIkonKichik{ width:18px; height:18px; }
+
+.headerBadge{
+  position:absolute;
+  top:-4px;
+  right:-6px;
+  width:18px;
+  height:18px;
+  border-radius:999px;
+  background:#18c7b0;
+  color:#05211d;
+  font-size:11px;
+  font-weight:1000;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow: 0 0 0 2px #fff;
+}
+
+.headerDukon{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-left: 6px;
+}
+
+.headerDukonIkon{
+  width:32px;
+  height:32px;
+  border-radius:999px;
+  background:#f2f2f2;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.headerDukonSarl{
+  font-size:13px;
+  font-weight:900;
+  color:#2a2a2a;
+  line-height:1.1;
+}
+
+.headerDukonSub{
+  font-size:12px;
+  color:#8a8a8a;
+  margin-top:2px;
+  line-height:1.1;
+}
+
+.headerPast{
+  height:56px;
+  border-top:1px solid #eee;
+  background:#fff;
+}
+
+.headerPastIch{
+  height:56px;
+  display:flex;
+  align-items:center;
+  gap:24px;
+}
+
+.headerKatBtn{
+  height:40px;
+  min-width:210px;
+  border:0;
+  background:#111;
+  color:#fff;
+  border-radius:12px;
+  padding:0 16px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  cursor:pointer;
+  font-weight:900;
+  font-size:14px;
+}
+
+.headerMenyu{
+  display:flex;
+  align-items:center;
+  gap:26px;
+}
+
+.headerLink{
+  font-size:14px;
+  color:#2a2a2a;
+  font-weight:700;
+  white-space:nowrap;
+}
+
+.headerLinkFaol{
+  color:#18c7b0;
+  font-weight:1000;
+}
+
+@media (max-width: 1100px){
+  .headerDukon{ display:none; }
+  .headerQidiruv{ width:520px; }
+}
+
+@media (max-width: 860px){
+  .headerQidiruv{ display:none; }
+  .headerMenyu{ display:none; }
+}

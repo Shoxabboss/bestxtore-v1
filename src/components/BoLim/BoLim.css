@@ -1,0 +1,37 @@
+.bolim{
+    margin-top: 26px;
+    margin-bottom: 14px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+  }
+  
+  .bolimNom{
+    font-size: 18px;
+    font-weight: 1000;
+    color:#1a1a1a;
+  }
+  
+  .bolimTugma{
+    display:flex;
+    gap: 10px;
+  }
+  
+  .bolimTugma button{
+    width: 30px;
+    height: 30px;
+    border-radius: 999px;
+    border: 1px solid #eee;
+    background:#fff;
+    cursor:pointer;
+    font-size: 18px;
+    line-height: 1;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  
+  .bolimTugma button:hover{
+    border-color:#dcdcdc;
+  }
+  

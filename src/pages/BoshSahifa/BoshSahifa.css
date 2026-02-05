@@ -778,24 +778,110 @@
   color: rgba(255,255,255,.8);
 }
 
+@media (max-width: 1200px){
+  .katak4{ grid-template-columns: repeat(3, 1fr); }
+  .katak3{ grid-template-columns: repeat(3, 1fr); }
+}
+
 @media (max-width: 1050px){
   .katak4{ grid-template-columns: repeat(2, 1fr); }
+  .katak3{ grid-template-columns: repeat(2, 1fr); }
+
   .topRated{ grid-template-columns: 1fr; }
+  .topRated__katta{ min-height: 220px; }
+  .topRated__rasm{ width: 220px; height: 220px; }
   .footer__ich{ grid-template-columns: 1fr 1fr; }
 }
 
-@media (max-width: 860px){
+@media (max-width: 920px){
   .katak2{ grid-template-columns: 1fr; }
-  .katak3{ grid-template-columns: repeat(2, 1fr); }
-  .insta{ grid-template-columns: 1fr; }
-  .insta__katak{ grid-template-columns: repeat(3, 1fr); }
-  .feedback{ grid-template-columns: 1fr; }
-  .newBanner__katta, .newBanner__katta2{ font-size: 58px; }
+
+  .newBanner{ height: 380px; }
+  .newBanner__ich{ height: 380px; }
+  .newBanner__chap{ width: 440px; }
+  .newBanner__katta, .newBanner__katta2{ font-size: 64px; }
+  .newBanner__oNg{ width: 340px; }
+
+  .ikkiBanner{ grid-template-columns: 1fr; }
+  .bannerKichik{ min-height: 110px; }
+
+  .macBanner{ height: 240px; }
+  .macBanner__ich{ height: 240px; }
+  .macBanner__chap{ width: 460px; }
+  .macBanner__katta{ font-size: 24px; }
+}
+
+@media (max-width: 780px){
+  .newBanner{ height: auto; }
+  .newBanner__ich{
+    height: auto;
+    padding: 28px 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+  .newBanner__chap{ width: 100%; }
+  .newBanner__katta, .newBanner__katta2{ font-size: 56px; }
+  .newBanner__oNg{ width: 100%; }
+
+  .macBanner{
+    height: auto;
+  }
+  .macBanner__ich{
+    height: auto;
+    padding: 22px 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+  .macBanner__chap{ width: 100%; }
+  .macBanner__oNg{ width: 100%; }
+
+  .insta{
+    grid-template-columns: 1fr;
+  }
+  .insta__katak{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .insta__blok{
+    height: 140px;
+  }
+
+  .feedback{
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 560px){
   .katak3{ grid-template-columns: 1fr; }
   .katak4{ grid-template-columns: 1fr; }
-  .insta__katak{ grid-template-columns: repeat(2, 1fr); }
-  .newBanner__oNg{ width: 100%; }
+
+  .kart{
+    flex-direction: column;
+  }
+  .kart__rasmQism{ width: 100%; }
+  .kart__ich{ width: 100%; }
+
+  .mKart__rasmQism{ height: 190px; }
+
+  .topRated__katta{
+    padding: 16px;
+    min-height: 200px;
+  }
+  .topRated__rasm{
+    width: 190px;
+    height: 190px;
+    right: 8px;
+  }
+
+  .insta__katak{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .insta__blok{
+    height: 120px;
+  }
+
+  .footer__ich{
+    grid-template-columns: 1fr;
+  }
 }

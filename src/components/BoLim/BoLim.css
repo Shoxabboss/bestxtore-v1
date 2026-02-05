@@ -34,4 +34,8 @@
   .bolimTugma button:hover{
     border-color:#dcdcdc;
   }
+  @media (max-width: 560px){
+    .bolim{ margin-top: 20px; }
+    .bolimNom{ font-size: 16px; }
+  }
   

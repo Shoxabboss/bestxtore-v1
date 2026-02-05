@@ -90,3 +90,6 @@ a{
 @media (max-width:900px){
   .konteyner{ max-width: calc(100% - 28px); }
 }
+@media (max-width: 420px){
+  .konteyner{ max-width: calc(100% - 22px); }
+}

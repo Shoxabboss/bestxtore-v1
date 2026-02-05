@@ -1,0 +1,31 @@
+.shopSarl{
+    background:#f4f4f4;
+    border-top:1px solid #eee;
+    border-bottom:1px solid #eee;
+  }
+  
+  .shopSarlIch{
+    padding: 34px 0;
+  }
+  
+  .shopSarlNom{
+    font-size: 34px;
+    font-weight: 1000;
+    color:#222;
+  }
+  
+  .shopSarlYoL{
+    margin-top: 10px;
+    font-size: 12px;
+    color:#777;
+    font-weight:800;
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  
+  .shopSarlChiziq{
+    color:#bbb;
+    font-weight:1000;
+  }
+  

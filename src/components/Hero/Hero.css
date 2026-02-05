@@ -143,4 +143,47 @@
   .heroDotFaol{
     background:#18c7b0;
   }
+  @media (max-width: 1200px){
+    .headerQidiruv{ width: 520px; }
+  }
+  
+  @media (max-width: 1040px){
+    .headerDukon{ display:none; }
+  }
+  
+  @media (max-width: 900px){
+    .headerYuqori{ height:auto; padding: 8px 0; }
+    .headerYuqoriIch{
+      height:auto;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      justify-content: center;
+      text-align:center;
+    }
+    .headerAloqa, .headerSozlama{ justify-content:center; }
+  
+    .headerOrta{ height:auto; padding: 12px 0; }
+    .headerOrtaIch{
+      height:auto;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: space-between;
+    }
+    .headerQidiruv{ width: 100%; order: 3; }
+  }
+  
+  @media (max-width: 860px){
+    .headerPast{ height:auto; padding: 10px 0; }
+    .headerPastIch{ height:auto; }
+    .headerMenyu{ display:none; }
+    .headerKatBtn{ width: 100%; min-width: unset; }
+  }
+  
+  @media (max-width: 560px){
+    .headerAmal{ gap: 8px; }
+    .headerIkonBtn{ width: 34px; height: 34px; }
+    .headerNomi{ font-size: 16px; }
+    .headerLogo{ width: 28px; height: 28px; }
+    .headerQidiruv{ height: 42px; }
+  }
   

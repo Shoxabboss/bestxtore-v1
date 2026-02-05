@@ -1,0 +1,72 @@
+.bKart{
+    border:1px solid #eee;
+    border-radius: 16px;
+    overflow:hidden;
+    background:#fff;
+    box-shadow: 0 12px 24px rgba(0,0,0,.06);
+  }
+  
+  .bKartRasm{
+    position:relative;
+    height: 210px;
+    background:#f2f2f2;
+  }
+  
+  .bKart--katta .bKartRasm{
+    height: 240px;
+  }
+  
+  .bKartRasm img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+  }
+  
+  .bReadMore{
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border:0;
+    background: rgba(0,0,0,.55);
+    color:#fff;
+    font-weight:1000;
+    padding: 10px 14px;
+    border-radius: 999px;
+    cursor:pointer;
+    letter-spacing: .3px;
+    font-size: 12px;
+  }
+  
+  .bReadSt{ margin-left: 6px; }
+  
+  .bKartPast{
+    padding: 12px 12px 14px;
+  }
+  
+  .bTeglar{
+    display:flex;
+    gap: 8px;
+    flex-wrap:wrap;
+  }
+  
+  .bTeg{
+    font-size:11px;
+    font-weight:900;
+    color:#444;
+    padding: 4px 8px;
+    border:1px solid #eee;
+    background:#fff;
+    border-radius: 999px;
+  }
+  
+  .bSarl{
+    margin-top: 10px;
+    font-size:12px;
+    font-weight:900;
+    color:#444;
+    line-height: 1.4;
+    min-height: 34px;
+  }
+  

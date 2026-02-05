@@ -1,0 +1,183 @@
+.filtr{ width:100%; }
+
+.filtrSarl{
+  font-weight:1000;
+  color:#222;
+  font-size:14px;
+  margin-bottom: 12px;
+}
+
+.filtrSarl--oraliq{
+  margin-top: 18px;
+}
+
+.filtrBox{
+  border:1px solid #eee;
+  border-radius:16px;
+  background:#fff;
+  box-shadow: 0 12px 24px rgba(0,0,0,.05);
+  overflow:hidden;
+}
+
+.filtrBox--pad{
+  padding: 14px;
+}
+
+.filtrKat{
+  border-top:1px solid #f1f1f1;
+}
+
+.filtrKat:first-child{ border-top:0; }
+
+.filtrKatBtn{
+  width:100%;
+  height: 42px;
+  padding: 0 14px;
+  border:0;
+  background:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  cursor:pointer;
+  font-weight:900;
+  color:#444;
+}
+
+.filtrKatBtn--faol{
+  background:#111;
+  color:#fff;
+}
+
+.filtrKatStrelka{ opacity:.8; }
+
+.filtrSub{
+  padding: 10px 12px 14px;
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+}
+
+.filtrSubBtn{
+  border:0;
+  background:transparent;
+  text-align:left;
+  color:#666;
+  font-weight:800;
+  cursor:pointer;
+  padding: 4px 2px;
+}
+
+.filtrSubBtn--faol{
+  color:#18c7b0;
+  font-weight:1000;
+}
+
+.filtrRange{
+  width:100%;
+  accent-color: #18c7b0;
+}
+
+.filtrRangePast{
+  margin-top: 12px;
+  font-size:12px;
+  color:#777;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  font-weight:800;
+}
+
+.filtrNarx{
+  color:#18c7b0;
+  font-weight:1000;
+}
+
+.filtrRanglar{
+  display:flex;
+  align-items:center;
+  gap: 10px;
+  flex-wrap:wrap;
+}
+
+.filtrRang{
+  width: 20px;
+  height: 20px;
+  border-radius:999px;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 1px #e7e7e7;
+  cursor:pointer;
+}
+
+.filtrRang--faol{
+  box-shadow: 0 0 0 2px #18c7b0;
+}
+
+.filtrRang[data-rang="white"]{ background:#fff; }
+.filtrRang[data-rang="gray"]{ background:#cfcfcf; }
+.filtrRang[data-rang="black"]{ background:#111; }
+.filtrRang[data-rang="blue"]{ background:#2f6bff; }
+.filtrRang[data-rang="green"]{ background:#18c7b0; }
+.filtrRang[data-rang="orange"]{ background:#ff9b35; }
+
+.filtrChiplar{
+  display:flex;
+  gap: 10px;
+  flex-wrap:wrap;
+}
+
+.filtrChip{
+  height: 28px;
+  padding: 0 10px;
+  border-radius: 999px;
+  border:1px solid #eee;
+  background:#fff;
+  cursor:pointer;
+  font-weight:900;
+  font-size:12px;
+  color:#555;
+}
+
+.filtrChip--faol{
+  border-color:#18c7b0;
+  box-shadow: 0 0 0 3px rgba(24,199,176,.12);
+}
+
+.filtrTop{
+  display:flex;
+  flex-direction:column;
+  gap: 12px;
+}
+
+.filtrTopQator{
+  display:flex;
+  gap: 12px;
+  align-items:center;
+}
+
+.filtrTopRasm{
+  width: 54px;
+  height: 54px;
+  border-radius: 14px;
+  background:#f2f2f2;
+  border:1px solid #eee;
+}
+
+.filtrTopNarx{
+  font-weight:1000;
+  color:#111;
+  font-size:12px;
+}
+
+.filtrTopNom{
+  margin-top: 4px;
+  font-weight:900;
+  color:#444;
+  font-size:12px;
+}
+
+.filtrTopSub{
+  margin-top: 4px;
+  font-size:11px;
+  color:#8a8a8a;
+  font-weight:800;
+}

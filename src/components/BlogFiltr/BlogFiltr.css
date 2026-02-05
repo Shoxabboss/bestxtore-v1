@@ -1,0 +1,119 @@
+.bFiltr{ width:100%; }
+
+.bFiltrSarl{
+  font-weight:1000;
+  color:#222;
+  font-size:14px;
+  margin-bottom: 12px;
+}
+
+.bFiltrSarl--oraliq{ margin-top: 18px; }
+
+.bFiltrBox{
+  border:1px solid #eee;
+  border-radius:16px;
+  background:#fff;
+  box-shadow: 0 12px 24px rgba(0,0,0,.05);
+  overflow:hidden;
+}
+
+.bFiltrBox--pad{ padding: 14px; }
+
+.bFiltrKat{
+  border-top:1px solid #f1f1f1;
+}
+.bFiltrKat:first-child{ border-top:0; }
+
+.bKatBtn{
+  width:100%;
+  height:42px;
+  padding:0 14px;
+  border:0;
+  background:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  cursor:pointer;
+  font-weight:900;
+  color:#444;
+}
+
+.bKatBtn--faol{
+  background:#111;
+  color:#fff;
+}
+
+.bKatStrelka{ opacity:.8; }
+
+.bSub{
+  padding: 10px 12px 14px;
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+}
+
+.bSubBtn{
+  border:0;
+  background:transparent;
+  text-align:left;
+  color:#666;
+  font-weight:800;
+  cursor:pointer;
+  padding: 4px 2px;
+}
+
+.bSubBtn--faol{
+  color:#18c7b0;
+  font-weight:1000;
+}
+
+.bYangi{
+  display:flex;
+  flex-direction:column;
+  gap: 14px;
+}
+
+.bYangiKart{
+  display:flex;
+  flex-direction:column;
+  gap: 10px;
+}
+
+.bYangiRasm{
+  width:100%;
+  height: 150px;
+  border-radius: 14px;
+  overflow:hidden;
+  border:1px solid #eee;
+  background:#f2f2f2;
+}
+
+.bYangiRasm img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+.bYangiTag{
+  display:flex;
+  gap: 8px;
+  flex-wrap:wrap;
+}
+
+.bTag{
+  font-size:11px;
+  font-weight:900;
+  color:#444;
+  padding: 4px 8px;
+  border:1px solid #eee;
+  background:#fff;
+  border-radius: 999px;
+}
+
+.bYangiMatn{
+  font-size:12px;
+  color:#777;
+  font-weight:800;
+  line-height: 1.45;
+}

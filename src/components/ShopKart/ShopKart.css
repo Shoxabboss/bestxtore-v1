@@ -1,0 +1,161 @@
+.sk{
+    border:1px solid #eee;
+    border-radius: 16px;
+    background:#fff;
+    overflow:hidden;
+    box-shadow: 0 12px 24px rgba(0,0,0,.06);
+  }
+  
+  .sk--list{
+    display:grid;
+    grid-template-columns: 260px 1fr;
+  }
+  
+  .skRasmQism{
+    background:#f3f3f3;
+    height: 240px;
+    position:relative;
+    padding: 14px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  
+  .sk--list .skRasmQism{
+    height: 210px;
+  }
+  
+  .skRasm{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius: 14px;
+  }
+  
+  .skBadge{
+    position:absolute;
+    top:12px;
+    right:12px;
+    background:#111;
+    color:#fff;
+    font-weight:1000;
+    font-size:11px;
+    padding: 6px 8px;
+    border-radius: 8px;
+  }
+  
+  .skChegirma{
+    position:absolute;
+    top:12px;
+    left:12px;
+    background:#18c7b0;
+    color:#05211d;
+    font-weight:1000;
+    font-size:11px;
+    padding: 6px 8px;
+    border-radius: 8px;
+  }
+  
+  .skHover{
+    position:absolute;
+    left: 14px;
+    bottom: 14px;
+    display:flex;
+    gap: 8px;
+    opacity:0;
+    transform: translateY(8px);
+    transition: .18s ease;
+  }
+  
+  .sk:hover .skHover{
+    opacity:1;
+    transform: translateY(0);
+  }
+  
+  .skHBtn{
+    width:30px;
+    height:30px;
+    border-radius: 10px;
+    border:1px solid #e8e8e8;
+    background:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+  }
+  
+  .skHBtn img{
+    width:16px;
+    height:16px;
+  }
+  
+  .skHBtn--yashil{
+    background:#18c7b0;
+    border-color:#18c7b0;
+  }
+  
+  .skHBtn--yashil img{
+    filter: invert(0.05);
+  }
+  
+  .skMatn{
+    padding: 14px 14px 16px;
+  }
+  
+  .skNarxQator{
+    display:flex;
+    align-items:baseline;
+    justify-content:center;
+    gap: 10px;
+  }
+  
+  .skNarx{
+    font-weight:1000;
+    color:#111;
+    font-size:13px;
+  }
+  
+  .skEski{
+    font-size:12px;
+    color:#9a9a9a;
+    text-decoration: line-through;
+    font-weight:800;
+  }
+  
+  .skNom{
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight:900;
+    color:#444;
+    line-height: 1.35;
+    text-align:center;
+    min-height: 34px;
+  }
+  
+  .skRating{
+    margin-top: 10px;
+    display:flex;
+    justify-content:center;
+    gap: 8px;
+    align-items:center;
+    font-size: 11px;
+    color:#8a8a8a;
+    font-weight:800;
+  }
+  
+  .skYulduz{
+    color:#18c7b0;
+    letter-spacing: 1px;
+  }
+  
+  .skRey{
+    color:#444;
+    font-weight:1000;
+  }
+  
+  @media (max-width: 600px){
+    .sk--list{
+      grid-template-columns: 1fr;
+    }
+  }
+  

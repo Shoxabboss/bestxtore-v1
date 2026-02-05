@@ -36,7 +36,7 @@ export const rasm = {
     { nom: "TAX FREE IN USA", izoh: "New arrivals every week", rang: "yashil", belgi: "⏱" },
     { nom: "FREE DISCOUNT CODE", izoh: "Weekly deals for you", rang: "qora", belgi: "🎫" }
   ];
-  
+ 
   export const flashSale = [
     {
       id: 1,

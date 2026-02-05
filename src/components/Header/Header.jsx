@@ -1,5 +1,6 @@
 import "./Header.css";
 import { ikon, menyu, rasm } from "../../shared/maketData";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -28,19 +29,25 @@ export default function Header() {
 
       <div className="headerOrta">
         <div className="konteyner headerOrtaIch">
-          <div className="headerBrend">
+          <Link to="/" className="headerBrend">
             <img className="headerLogo" src={rasm.logo} alt="" />
             <div className="headerNomi">BESTXTORE</div>
-          </div>
+          </Link>
 
           <div className="headerQidiruv">
             <input className="headerInput" placeholder="Search..." />
             <div className="headerChiziq"></div>
+
             <button className="headerKategoriya" type="button">
               All Categories <span className="headerCaret">▾</span>
             </button>
+
             <button className="headerQidirBtn" type="button">
-              <img className="headerIkon headerIkonOq" src={ikon.qidiruv} alt="" />
+              <img
+                className="headerIkon headerIkonOq"
+                src={ikon.qidiruv}
+                alt=""
+              />
             </button>
           </div>
 
@@ -54,10 +61,10 @@ export default function Header() {
               <img className="headerIkon" src={ikon.solishtir} alt="" />
             </button>
 
-            <button className="headerIkonBtn" type="button">
+            <Link to="/shop" className="headerIkonBtn" aria-label="Cart">
               <img className="headerIkon" src={ikon.savat} alt="" />
               <span className="headerBadge">2</span>
-            </button>
+            </Link>
 
             <button className="headerIkonBtn" type="button">
               <img className="headerIkon" src={ikon.odam} alt="" />
@@ -65,7 +72,11 @@ export default function Header() {
 
             <div className="headerDukon">
               <div className="headerDukonIkon">
-                <img className="headerIkon headerIkonKichik" src={ikon.lokatsiya} alt="" />
+                <img
+                  className="headerIkon headerIkonKichik"
+                  src={ikon.lokatsiya}
+                  alt=""
+                />
               </div>
               <div className="headerDukonMatn">
                 <div className="headerDukonSarl">Stores Near You</div>
@@ -81,14 +92,22 @@ export default function Header() {
           <button className="headerKatBtn" type="button">
             All Categories <span className="headerCaret">▾</span>
           </button>
+                  <nav className="headerMenyu">
+          {menyu.map((m) => (
+            <NavLink
+              key={m}
+              to={m === "Product" ? "/shop" : m === "Blog" ? "/blog" : "/"}
+              className={({ isActive }) =>
+                isActive && (m === "Product" || m === "Blog")
+                  ? "headerLink headerLinkFaol"
+                  : "headerLink"
+              }
+            >
+              {m}
+            </NavLink>
+          ))}
+        </nav>
 
-          <nav className="headerMenyu">
-            {menyu.map((m, i) => (
-              <a className={i === 0 ? "headerLink headerLinkFaol" : "headerLink"} href="#" key={m}>
-                {m}
-              </a>
-            ))}
-          </nav>
         </div>
       </div>
     </header>

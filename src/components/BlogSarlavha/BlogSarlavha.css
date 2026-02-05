@@ -1,0 +1,31 @@
+.blogSarl{
+    background:#f4f4f4;
+    border-top:1px solid #eee;
+    border-bottom:1px solid #eee;
+  }
+  
+  .blogSarlIch{
+    padding: 34px 0;
+  }
+  
+  .blogSarlNom{
+    font-size: 34px;
+    font-weight: 1000;
+    color:#222;
+  }
+  
+  .blogSarlYoL{
+    margin-top: 10px;
+    font-size: 12px;
+    color:#777;
+    font-weight:900;
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  
+  .blogSarlChiziq{
+    color:#bbb;
+    font-weight:1000;
+  }
+  

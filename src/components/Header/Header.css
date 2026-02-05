@@ -1,85 +1,84 @@
-.header{ width:100%; }
+.header{
+  width:100%;
+  background:#fff;
+  font-family: inherit;
+}
 
 .headerYuqori{
-  height:36px;
-  background:#f6f6f6;
-  border-bottom:1px solid #eee;
+  background:#111;
+  color:#fff;
+  font-size:12px;
 }
 
 .headerYuqoriIch{
-  height:36px;
+  height:38px;
   display:flex;
   align-items:center;
   justify-content:space-between;
-  gap:14px;
-  font-size:13px;
-  color:#666;
 }
 
-.headerAloqa, .headerSozlama{
+.headerAloqa,
+.headerSozlama{
   display:flex;
   align-items:center;
-  gap:12px;
-  white-space:nowrap;
+  gap:10px;
 }
 
 .headerNuqta{
   width:4px;
   height:4px;
-  background:#cfcfcf;
-  border-radius:999px;
-  display:inline-block;
+  background:#666;
+  border-radius:50%;
 }
 
 .headerAksiya{
-  color:#333;
-  font-weight:500;
-  white-space:nowrap;
+  font-weight:900;
 }
 
-.headerStrelka{ font-weight:900; }
+.headerStrelka{
+  margin-left:6px;
+}
 
 .headerOrta{
-  height:86px;
-  background:#fff;
+  border-bottom:1px solid #eee;
 }
 
 .headerOrtaIch{
-  height:86px;
+  height:82px;
   display:flex;
   align-items:center;
   justify-content:space-between;
-  gap:18px;
+  gap:24px;
 }
 
 .headerBrend{
   display:flex;
   align-items:center;
   gap:10px;
+  text-decoration:none;
 }
 
 .headerLogo{
-  width:32px;
-  height:32px;
-  border-radius:10px;
-  object-fit:cover;
+  width:34px;
+  height:34px;
+  object-fit:contain;
 }
 
 .headerNomi{
   font-weight:1000;
-  letter-spacing:1px;
-  font-size:18px;
+  font-size:20px;
+  color:#111;
 }
 
 .headerQidiruv{
-  width:620px;
-  height:44px;
-  border:1px solid #dedede;
-  border-radius:10px;
-  overflow:hidden;
+  flex:1;
+  max-width:560px;
+  height:48px;
+  border:1px solid #eee;
+  border-radius:14px;
   display:flex;
   align-items:center;
-  background:#fff;
+  overflow:hidden;
 }
 
 .headerInput{
@@ -87,174 +86,194 @@
   height:100%;
   border:0;
   outline:0;
-  padding:0 14px;
-  font-size:14px;
+  padding:0 16px;
+  font-size:13px;
 }
-
-.headerInput::placeholder{ color:#b6b6b6; }
 
 .headerChiziq{
   width:1px;
   height:60%;
-  background:#e8e8e8;
+  background:#eee;
 }
 
 .headerKategoriya{
+  height:100%;
   border:0;
   background:#fff;
-  height:100%;
-  padding:0 14px;
-  color:#666;
+  padding:0 16px;
+  font-size:12px;
+  font-weight:900;
   cursor:pointer;
-  font-size:14px;
-  white-space:nowrap;
 }
 
-.headerCaret{ font-size:12px; opacity:.8; }
+.headerCaret{
+  margin-left:6px;
+}
 
 .headerQidirBtn{
-  width:50px;
   height:100%;
+  width:52px;
   border:0;
-  background:#111;
+  background:#18c7b0;
   display:flex;
   align-items:center;
   justify-content:center;
   cursor:pointer;
+}
+
+.headerIkonOq{
+  filter:invert(1);
+  width:16px;
+  height:16px;
 }
 
 .headerAmal{
   display:flex;
   align-items:center;
-  gap:12px;
+  gap:14px;
 }
 
 .headerIkonBtn{
   position:relative;
-  width:36px;
-  height:36px;
-  border:0;
-  background:transparent;
-  border-radius:10px;
+  width:38px;
+  height:38px;
+  border-radius:12px;
+  border:1px solid #eee;
+  background:#fff;
   display:flex;
   align-items:center;
   justify-content:center;
   cursor:pointer;
+  text-decoration:none;
 }
-
-.headerIkonBtn:hover{ background:#f6f6f6; }
 
 .headerIkon{
-  width:22px;
-  height:22px;
-  display:block;
+  width:18px;
+  height:18px;
 }
-
-.headerIkonOq{ filter: invert(1); }
-.headerIkonKichik{ width:18px; height:18px; }
 
 .headerBadge{
   position:absolute;
-  top:-4px;
+  top:-6px;
   right:-6px;
-  width:18px;
+  min-width:18px;
   height:18px;
-  border-radius:999px;
   background:#18c7b0;
-  color:#05211d;
+  color:#053b36;
+  border-radius:999px;
   font-size:11px;
   font-weight:1000;
   display:flex;
   align-items:center;
   justify-content:center;
-  box-shadow: 0 0 0 2px #fff;
 }
 
 .headerDukon{
   display:flex;
   align-items:center;
   gap:10px;
-  margin-left: 6px;
+  padding-left:10px;
+  border-left:1px solid #eee;
 }
 
 .headerDukonIkon{
-  width:32px;
-  height:32px;
-  border-radius:999px;
-  background:#f2f2f2;
+  width:36px;
+  height:36px;
+  border-radius:10px;
+  background:#f4f4f4;
   display:flex;
   align-items:center;
   justify-content:center;
 }
 
+.headerIkonKichik{
+  width:16px;
+  height:16px;
+}
+
+.headerDukonMatn{
+  display:flex;
+  flex-direction:column;
+  gap:2px;
+}
+
 .headerDukonSarl{
-  font-size:13px;
+  font-size:12px;
   font-weight:900;
-  color:#2a2a2a;
-  line-height:1.1;
+  color:#222;
 }
 
 .headerDukonSub{
-  font-size:12px;
-  color:#8a8a8a;
-  margin-top:2px;
-  line-height:1.1;
+  font-size:11px;
+  color:#777;
 }
 
 .headerPast{
-  height:56px;
-  border-top:1px solid #eee;
-  background:#fff;
+  border-bottom:1px solid #eee;
 }
 
 .headerPastIch{
   height:56px;
   display:flex;
   align-items:center;
-  gap:24px;
+  gap:20px;
 }
 
 .headerKatBtn{
-  height:40px;
-  min-width:210px;
-  border:0;
-  background:#111;
-  color:#fff;
-  border-radius:12px;
+  height:38px;
   padding:0 16px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:12px;
-  cursor:pointer;
+  border-radius:12px;
+  border:1px solid #eee;
+  background:#fff;
+  font-size:12px;
   font-weight:900;
-  font-size:14px;
+  cursor:pointer;
 }
 
 .headerMenyu{
   display:flex;
   align-items:center;
-  gap:26px;
+  gap:18px;
 }
 
 .headerLink{
-  font-size:14px;
-  color:#2a2a2a;
-  font-weight:700;
-  white-space:nowrap;
+  text-decoration:none;
+  color:#555;
+  font-weight:900;
+  font-size:13px;
 }
 
 .headerLinkFaol{
   color:#18c7b0;
-  font-weight:1000;
 }
 
-@media (max-width: 1100px){
+
+@media (max-width: 1024px){
   .headerDukon{ display:none; }
-  .headerQidiruv{ width:520px; }
 }
 
-@media (max-width: 860px){
-  .headerQidiruv{ display:none; }
-  .headerMenyu{ display:none; }
+@media (max-width: 900px){
+  .headerOrtaIch{
+    flex-wrap:wrap;
+    gap:14px;
+  }
+
+  .headerQidiruv{
+    order:3;
+    width:100%;
+    max-width:100%;
+  }
+}
+
+@media (max-width: 600px){
+  .headerYuqori{ display:none; }
+
+  .headerPast{ display:none; }
+
+  .headerNomi{ font-size:16px; }
+
+  .headerIkonBtn{
+    width:34px;
+    height:34px;
+  }
 }

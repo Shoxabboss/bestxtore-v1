@@ -3,15 +3,26 @@ import Header from "../../components/Header/Header";
 import Hero from "../../components/Hero/Hero";
 import XizmatPanel from "../../components/XizmatPanel/XizmatPanel";
 import BoLim from "../../components/BoLim/BoLim";
-import { flashSale, kategoriyalar, newArrivals, bestSellers, topRated, rasm, ikon } from "../../shared/maketData";
 
-export default function BoshSahifa() {
+export default function BoshSahifa({ data }) {
+  const {
+    rasm,
+    ikon,
+    xizmatlar,
+    flashSale,
+    kategoriyalar,
+    newArrivals,
+    bestSellers,
+    topRated,
+  } = data;
+
   return (
     <div className="sahifa">
-      <Header />
-      <Hero />
+      <Header data={data} />
+      <Hero rasm={rasm} />
+
       <div className="konteyner">
-        <XizmatPanel />
+        <XizmatPanel xizmatlar={xizmatlar} />
 
         <BoLim nom="Flash Sale" />
         <div className="katak2">
@@ -245,7 +256,7 @@ export default function BoshSahifa() {
             <div className="insta__tag">@bestxtore</div>
           </div>
           <div className="insta__katak">
-            {[1,2,3,4,5].map((n) => (
+            {[1, 2, 3, 4, 5].map((n) => (
               <div className="insta__blok" key={n}></div>
             ))}
           </div>

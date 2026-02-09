@@ -1,19 +1,20 @@
+import { useState } from "react";
 import "./Shop.css";
 import Header from "../../components/Header/Header";
 import ShopSarlavha from "../../components/ShopSarlavha/ShopSarlavha";
 import ShopFiltr from "../../components/ShopFiltr/ShopFiltr";
 import ShopGrid from "../../components/ShopGrid/ShopGrid";
 
-import {
-  shopMahsulotlar,
-  shopRanglar,
-  shopXotira,
-  shopBrandlar,
-  shopKategoriya,
-  shopTopRated,
-} from "../../shared/shopData";
+export default function Shop({ data, ui }) {
+  const {
+    shopMahsulotlar,
+    shopRanglar,
+    shopXotira,
+    shopBrandlar,
+    shopKategoriya,
+    shopTopRated,
+  } = data;
 
-export default function Shop() {
   const [tanKat, setTanKat] = useState("Smartphone");
   const [tanSub, setTanSub] = useState("iPhone");
   const [narxMax, setNarxMax] = useState(350);
@@ -24,7 +25,6 @@ export default function Shop() {
   const [korinish, setKorinish] = useState("grid");
   const [sort, setSort] = useState("default");
   const [sahifa, setSahifa] = useState(1);
-
   const [filtrOch, setFiltrOch] = useState(false);
 
   const tanlanganlar = {
@@ -124,7 +124,7 @@ export default function Shop() {
 
   return (
     <div className="shopSahifa">
-      <Header />
+      <Header data={ui} />
       <ShopSarlavha />
 
       <div className="konteyner shopQavat">
@@ -170,14 +170,22 @@ export default function Shop() {
             <div className="shopView">
               <button
                 type="button"
-                className={korinish === "grid" ? "shopViewBtn shopViewBtn--faol" : "shopViewBtn"}
+                className={
+                  korinish === "grid"
+                    ? "shopViewBtn shopViewBtn--faol"
+                    : "shopViewBtn"
+                }
                 onClick={() => setKorinish("grid")}
               >
                 ⬛⬛
               </button>
               <button
                 type="button"
-                className={korinish === "list" ? "shopViewBtn shopViewBtn--faol" : "shopViewBtn"}
+                className={
+                  korinish === "list"
+                    ? "shopViewBtn shopViewBtn--faol"
+                    : "shopViewBtn"
+                }
                 onClick={() => setKorinish("list")}
               >
                 ☰
@@ -193,8 +201,8 @@ export default function Shop() {
             </div>
 
             <div className="shopNatija">
-              Showing {bosh + 1}-{Math.min(bosh + pageSize, tartiblangan.length)} of{" "}
-              {tartiblangan.length} result
+              Showing {bosh + 1}-{Math.min(bosh + pageSize, tartiblangan.length)}{" "}
+              of {tartiblangan.length} result
             </div>
 
             <select
@@ -214,7 +222,12 @@ export default function Shop() {
 
           <div className="shopChipQator">
             {chiplar.map((c, i) => (
-              <button className="shopChip" type="button" key={i} onClick={() => chipOchir(c)}>
+              <button
+                className="shopChip"
+                type="button"
+                key={i}
+                onClick={() => chipOchir(c)}
+              >
                 {c.nom} <span className="shopChipX">×</span>
               </button>
             ))}
@@ -224,10 +237,7 @@ export default function Shop() {
             </button>
           </div>
 
-          <ShopGrid
-            korinish={korinish}
-            mahsulotlar={koRinadigan}
-          />
+          <ShopGrid korinish={korinish} mahsulotlar={koRinadigan} />
 
           <div className="shopPagination">
             {Array(jamiSahifa)
@@ -252,4 +262,3 @@ export default function Shop() {
   );
 }
 
-import { useState } from "react";

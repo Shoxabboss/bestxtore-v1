@@ -1,7 +1,6 @@
 import "./XizmatPanel.css";
-import { xizmatlar } from "../../shared/maketData";
 
-export default function XizmatPanel() {
+export default function XizmatPanel({ xizmatlar }) {
   return (
     <section className="xizmat">
       <div className="xizmatQator">

@@ -5,9 +5,10 @@ import BlogSarlavha from "../../components/BlogSarlavha/BlogSarlavha";
 import BlogFiltr from "../../components/BlogFiltr/BlogFiltr";
 import BlogGrid from "../../components/BlogGrid/BlogGrid";
 
-import { blogKategoriyalar, blogPostlar, blogYangiPostlar } from "../../shared/blogData";
 
-export default function Blog() {
+export default function Blog({ data, ui }) {
+  const { blogKategoriyalar, blogPostlar, blogYangiPostlar } = data;
+
   const [tanAsosiy, setTanAsosiy] = useState("Tips (96)");
   const [tanSub, setTanSub] = useState("All (96)");
   const [sort, setSort] = useState("default");
@@ -33,7 +34,7 @@ export default function Blog() {
     if (sort === "katta") r.sort((a, b) => Number(!!b.katta) - Number(!!a.katta));
 
     return r;
-  }, [tanAsosiy, tanSub, sort]);
+  }, [tanAsosiy, tanSub, sort, blogPostlar]);
 
   const jamiSahifa = Math.max(1, Math.ceil(filtrlangan.length / pageSize));
   const sahifaToza = Math.min(sahifa, jamiSahifa);
@@ -42,7 +43,7 @@ export default function Blog() {
 
   return (
     <div className="blogSahifa">
-      <Header />
+      <Header data={ui} />
       <BlogSarlavha />
 
       <div className="konteyner blogQavat">

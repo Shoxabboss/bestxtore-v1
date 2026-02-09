@@ -1,7 +1,7 @@
 import "./ShopKart.css";
-import { ikon } from "../../shared/maketData";
 
-export default function ShopKart({ m, korinish }) {
+
+export default function ShopKart({ m, korinish, ikon }) {
   return (
     <div className={korinish === "list" ? "sk sk--list" : "sk"}>
       <div className="skRasmQism">
@@ -12,13 +12,13 @@ export default function ShopKart({ m, korinish }) {
 
         <div className="skHover">
           <button type="button" className="skHBtn">
-            <img src={ikon.yurak} alt="" />
+            <img src={ikon?.yurak || ""} alt="" />
           </button>
           <button type="button" className="skHBtn">
-            <img src={ikon.solishtir} alt="" />
+            <img src={ikon?.solishtir || ""} alt="" />
           </button>
           <button type="button" className="skHBtn skHBtn--yashil">
-            <img src={ikon.savat} alt="" />
+            <img src={ikon?.savat || ""} alt="" />
           </button>
         </div>
       </div>

@@ -1,10 +1,9 @@
 import "./Hero.css";
-import { rasm } from "../../shared/maketData";
 
-export default function Hero() {
+export default function Hero({ rasm }) {
   return (
     <section className="hero">
-      <img className="heroFon" src={rasm.heroFon} alt="" />
+      <img className="heroFon" src={rasm?.heroFon || ""} alt="" />
 
       <div className="konteyner heroIch">
         <div className="heroChap">

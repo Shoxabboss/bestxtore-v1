@@ -46,7 +46,7 @@ export default function BlogFiltr({
           </div>
         ))}
       </div>
-
+                                        
       <div className="bFiltrSarl bFiltrSarl--oraliq">New Posts</div>
       <div className="bFiltrBox bFiltrBox--pad">
         <div className="bYangi">

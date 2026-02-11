@@ -1,45 +1,28 @@
 import "./Blog.css";
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import Header from "../../components/Header/Header";
 import BlogSarlavha from "../../components/BlogSarlavha/BlogSarlavha";
-import BlogFiltr from "../../components/BlogFiltr/BlogFiltr";
 import BlogGrid from "../../components/BlogGrid/BlogGrid";
 
-
 export default function Blog({ data, ui }) {
-  const { blogKategoriyalar, blogPostlar, blogYangiPostlar } = data;
+  const { blogPostlar } = data;
 
-  const [tanAsosiy, setTanAsosiy] = useState("Tips (96)");
-  const [tanSub, setTanSub] = useState("All (96)");
   const [sort, setSort] = useState("default");
   const [sahifa, setSahifa] = useState(1);
 
   const pageSize = 12;
 
-  const filtrlangan = useMemo(() => {
-    const subToza = (tanSub || "").split(" ")[0];
-    const asosToza = (tanAsosiy || "").split(" ")[0];
+  const tartiblangan = [...blogPostlar].sort((a, b) => {
+    if (sort === "a-z") return a.sarlavha.localeCompare(b.sarlavha);
+    if (sort === "z-a") return b.sarlavha.localeCompare(a.sarlavha);
+    if (sort === "katta") return Number(!!b.katta) - Number(!!a.katta);
+    return a.id - b.id;
+  });
 
-    let r = [...blogPostlar];
-
-    if (asosToza && asosToza !== "Tips") {
-      r = r.filter((p) => p.teglar.includes(asosToza));
-    }
-    if (subToza && subToza !== "All") {
-      r = r.filter((p) => p.teglar.includes(subToza));
-    }
-
-    if (sort === "a-z") r.sort((a, b) => a.sarlavha.localeCompare(b.sarlavha));
-    if (sort === "z-a") r.sort((a, b) => b.sarlavha.localeCompare(a.sarlavha));
-    if (sort === "katta") r.sort((a, b) => Number(!!b.katta) - Number(!!a.katta));
-
-    return r;
-  }, [tanAsosiy, tanSub, sort, blogPostlar]);
-
-  const jamiSahifa = Math.max(1, Math.ceil(filtrlangan.length / pageSize));
+  const jamiSahifa = Math.max(1, Math.ceil(tartiblangan.length / pageSize));
   const sahifaToza = Math.min(sahifa, jamiSahifa);
   const bosh = (sahifaToza - 1) * pageSize;
-  const koRinadigan = filtrlangan.slice(bosh, bosh + pageSize);
+  const koRinadigan = tartiblangan.slice(bosh, bosh + pageSize);
 
   return (
     <div className="blogSahifa">
@@ -48,21 +31,6 @@ export default function Blog({ data, ui }) {
 
       <div className="konteyner blogQavat">
         <aside className="blogChap">
-          <BlogFiltr
-            kategoriyalar={blogKategoriyalar}
-            yangiPostlar={blogYangiPostlar}
-            tanAsosiy={tanAsosiy}
-            tanSub={tanSub}
-            setTanAsosiy={(v) => {
-              setSahifa(1);
-              setTanAsosiy(v);
-            }}
-            setTanSub={(v) => {
-              setSahifa(1);
-              setTanSub(v);
-            }}
-          />
-
           <div className="blogReklama">
             <div className="blogReklamaIch">
               <div className="blogReklamaOlma"></div>
@@ -79,8 +47,8 @@ export default function Blog({ data, ui }) {
         <main className="blogOng">
           <div className="blogTopBar">
             <div className="blogNatija">
-              Showing {bosh + 1}-{Math.min(bosh + pageSize, filtrlangan.length)} of{" "}
-              {filtrlangan.length} result
+              Showing {bosh + 1}-{Math.min(bosh + pageSize, tartiblangan.length)} of{" "}
+              {tartiblangan.length} result
             </div>
 
             <select

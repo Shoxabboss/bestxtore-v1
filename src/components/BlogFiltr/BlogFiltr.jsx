@@ -8,7 +8,7 @@ export default function BlogFiltr({
   setTanAsosiy,
   setTanSub,
 }) {
-  const tanAsosiyObj = kategoriyalar.find((k) => k.nom === tanAsosiy) || kategoriyalar[0];
+  
 
   return (
     <div className="bFiltr">
